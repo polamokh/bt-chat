@@ -104,7 +104,7 @@ public class BluetoothChatService {
             connectedThread = null;
         }
 
-        if (acceptThread == null) {
+        if (acceptThread != null) {
             acceptThread.cancel();
             acceptThread = null;
         }
